@@ -1,7 +1,7 @@
 import { Router } from 'express'
-import { getHoteis } from '../controllers/hoteis.controller.js'
+import { getHoteis, getHotelInfo } from '../controllers/hoteis.controller.js'
 const hoteisRouter = Router()
 
-hoteisRouter.get('/hoteis', getHoteis)
+hoteisRouter.get('/hoteis/:id', getHotelInfo)
 
 export { hoteisRouter };

@@ -9,7 +9,7 @@ const routes = Router()
 routes.use(cors())
 routes.use(express.json())
 routes.use(cidadesRouter)
-routes.use(passagensRouter)
 routes.use(hoteisRouter)
+
 
 export default routes
